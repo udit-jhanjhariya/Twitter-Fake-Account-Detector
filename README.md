@@ -1,60 +1,127 @@
 # 🕵️‍♂️ Twitter Fake Account Detector
-Detects whether a Twitter account is fake or real using machine learning. Built with Python, Scikit-learn, and a sleek Bootstrap-powered frontend.
 
-A machine learning-powered web app that identifies fake Twitter accounts using user profile features such as tweet count, follower ratio, bio length, language, and more.
+A machine learning-powered web application that helps identify potentially fake Twitter profiles using various profile features and characteristics. Built with Python, Scikit-learn, and a sleek Bootstrap-powered frontend.
 
-## 🚀 Project Overview
+## 🚀 Features
 
-This project uses a Random Forest Classifier to detect fake Twitter accounts. It analyzes publicly available Twitter user metadata and predicts whether a given profile is likely to be real or fake. The front-end is built using Bootstrap, and the back-end is developed in Python using Flask and Scikit-learn.
-
-## 📊 Features
-
-- Predicts whether a Twitter account is real or fake
-- Probability and confidence score for each prediction
+- Real-time prediction of Twitter profile authenticity
+- Analysis of multiple profile features including:
+  - Tweet count
+  - Follower count
+  - Following count
+  - Favorites count
+  - Listed count
+  - Account age
+  - Bio length
+  - Language preference
+  - Gender detection
 - Beautiful, dark-themed user interface
+- Detailed prediction confidence scores
 - Gender detection based on the user's first name
 - Language encoding and normalization of profile stats
 
-## 🧠 Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend**: HTML, CSS (Bootstrap), JavaScript (jQuery)
 - **Backend**: Python, Flask
 - **ML Model**: Random Forest Classifier (scikit-learn)
-- **Other Libraries**: pandas, numpy, gender-guesser, matplotlib, joblib
+- **Other Libraries**: 
+  - pandas
+  - numpy
+  - gender-guesser
+  - matplotlib
+  - joblib
+  - waitress
 
-## 📁 Dataset
-
-Two datasets are used:
-- `realusers.csv`
-- `fakeusers.csv`
-
-Make sure to place them in the `datasets/` folder.
-
-## 📦 How to Run
+## 📦 Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/twitter-fake-account-detector.git
-   cd twitter-fake-account-detector
-   
-Install dependencies:
+```bash
+git clone https://github.com/yourusername/Twitter-Fake-Profile-Detection.git
+cd Twitter-Fake-Profile-Detection
+```
 
+2. Create a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install required packages:
+```bash
 pip install -r requirements.txt
-Train the model (if needed) or use the pre-trained model:
+```
 
-python fake_account_detector.py
-Run the web app:
+## 🚀 Usage
 
-flask run
-Open your browser at:
+1. Start the Flask application:
+```bash
+cd model
+python app.py
+```
 
-http://127.0.0.1:5000/
-📝 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+2. Open your web browser and navigate to:
+```
+http://127.0.0.1:8080
+```
 
-🙋‍♂️ Author
-Udit Jhanjhariya
-Manipal University Jaipur
+3. Enter the Twitter profile details in the form and click "Predict" to get the analysis.
+
+## 📊 Model Details
+
+The application uses a Random Forest Classifier trained on various Twitter profile features to predict the authenticity of profiles. The model considers:
+
+- Account activity metrics
+- Social engagement ratios
+- Profile completeness
+- Account age and growth patterns
+- Language and demographic features
+
+## 📁 Project Structure
+
+```
+Twitter-Fake-Profile-Detection/
+├── model/
+│   ├── app.py                 # Flask application
+│   ├── model.py               # Model training code
+│   ├── twitter_fake_account_detector.joblib  # Trained model
+│   ├── templates/             # HTML templates
+│   └── datasets/              # Training datasets
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
+```
+
+## 📚 Requirements
+
+- Python 3.8+
+- Flask
+- scikit-learn
+- pandas
+- joblib
+- gender-guesser
+- waitress
+- matplotlib
+- numpy
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙋‍♂️ Author
+
+**Udit Jhanjhariya**  
+Manipal University Jaipur  
 B.Tech CSE — 2027
 
-🌟 If you like this project, consider giving it a ⭐ on GitHub!
+## 🙏 Acknowledgments
+
+- Dataset used for training
+- Contributors and maintainers
+- Open-source libraries used in the project
+
+
+If you like this project, consider giving it a ⭐ on GitHub!
