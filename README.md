@@ -58,9 +58,3 @@ Manipal University Jaipur
 B.Tech CSE — 2027
 
 🌟 If you like this project, consider giving it a ⭐ on GitHub!
-Copy
-Edit
-
----
-
-Let me know if you want it customized with your real name, GitHub username, or graduation year — I can auto-fill 
