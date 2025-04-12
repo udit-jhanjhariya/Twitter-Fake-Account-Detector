@@ -1,0 +1,19 @@
+Twitter Fake Profile Detection - Model Results
+--------------------------------------------------
+
+Model: Random Forest Classifier
+Number of trees: 100
+Training set size: 2254
+Test set size: 564
+
+Accuracy: 0.9291
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.99      0.93       270
+           1       0.99      0.87      0.93       294
+
+    accuracy                           0.93       564
+   macro avg       0.93      0.93      0.93       564
+weighted avg       0.94      0.93      0.93       564
