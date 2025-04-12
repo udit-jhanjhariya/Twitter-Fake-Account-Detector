@@ -1,26 +1,81 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Environment variables / Python virtualenv
-.env
-.venv/
+# Virtual Environment
 venv/
 ENV/
 env/
+.env
 
-# macOS / Linux / Windows system files
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
-Thumbs.db
 
-# Jupyter Notebook checkpoints (if used)
+# Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
 
-# Logs
+# Model files
+*.joblib
+*.pkl
+*.h5
+*.model
+*.weights
+
+# Logs and databases
 *.log
+*.sqlite
+*.db
 
-# Python build
+# Dataset files
+*.csv
+*.xlsx
+*.xls
+*.json
+*.xml
+
+# Local development
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Distribution / packaging
+.Python
+env/
 build/
 develop-eggs/
 dist/
@@ -36,26 +91,83 @@ var/
 .installed.cfg
 *.egg
 
-# VSCode
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# VS Code
 .vscode/
+*.code-workspace
 
 # PyCharm
 .idea/
+*.iml
+*.iws
+*.ipr
 
-# Model files
-*.joblib
-*.pkl
-*.h5
-
-# Dataset files
-datasets/
-*.csv
-*.tsv
-
-# Node.js (if frontend has JS build tools)
-node_modules/
-package-lock.json
-yarn.lock
-
-# HTML auto builds (optional)
-*.html
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
