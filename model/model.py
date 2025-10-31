@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import os
 
 try:
+
+    
     print("Loading datasets...")
     # Load datasets
     real_users = pd.read_csv('datasets/realusers.csv')
@@ -165,4 +167,5 @@ except Exception as e:
     print("Stack trace:")
     import traceback
     traceback.print_exc()
+
 
