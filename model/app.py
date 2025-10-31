@@ -98,6 +98,7 @@ def predict():
         print(f"Error in prediction: {str(e)}")
         return jsonify({'error': str(e)}), 400
 
+
 if __name__ == '__main__':
     print("\n" + "="*50)
     print("Starting Twitter Fake Profile Detection Server")
@@ -106,4 +107,6 @@ if __name__ == '__main__':
     print("\nPress Ctrl+C to stop the server")
     print("="*50 + "\n")
     serve(app, host='127.0.0.1', port=8080) 
+
+
 
