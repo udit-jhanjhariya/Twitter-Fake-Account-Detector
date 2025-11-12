@@ -1,3 +1,4 @@
+# Flask app for Twitter Fake Profile Detector
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from joblib import load
